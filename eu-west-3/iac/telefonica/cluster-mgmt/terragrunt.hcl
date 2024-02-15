@@ -23,28 +23,28 @@ inputs = {
       private_ip = "172.0.5.10"
       control_plane_in_edge = false
     }
-    "prod-cluster-mgmt-master-1" = {
-      private_ip = "172.0.5.11"
-      control_plane_in_edge = true
-    }
-    "prod-cluster-mgmt-master-2" = {
-      private_ip = "172.0.5.12"
-      control_plane_in_edge = false
-    }    
+#    "prod-cluster-mgmt-master-1" = {
+#      private_ip = "172.0.5.11"
+#      control_plane_in_edge = true
+#    }
+#    "prod-cluster-mgmt-master-2" = {
+#      private_ip = "172.0.5.12"
+#      control_plane_in_edge = false
+#    }    
   }
   workers = {
     "prod-cluster-mgmt-worker-0" = {
       private_ip = "172.0.5.13"
       worker_in_edge = true
     }
-    "prod-cluster-mgmt-worker-1" = {
-      private_ip = "172.0.5.14"
-      worker_in_edge = true
-    }
-   "prod-cluster-mgmt-worker-2" = {
-     private_ip = "172.0.5.14"
-     worker_in_edge = false
-   }
+#    "prod-cluster-mgmt-worker-1" = {
+#      private_ip = "172.0.5.14"
+#      worker_in_edge = true
+#    }
+#   "prod-cluster-mgmt-worker-2" = {
+#     private_ip = "172.0.5.14"
+#     worker_in_edge = false
+#   }
   }
 
   default_tags = {
