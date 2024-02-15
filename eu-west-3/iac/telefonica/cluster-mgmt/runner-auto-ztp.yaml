@@ -1,0 +1,10 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+ name: k8s-action-runner-auto-ztp
+ namespace: pipelines-cicd-tactile5g
+spec:
+ replicas: 3
+ template:
+   spec:
+    repository: andresanaya21/tactile5g-local-auto-ztp

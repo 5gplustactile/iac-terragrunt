@@ -1,0 +1,8 @@
+[instances]
+telefonica-edge-cluster-control-plane-2tt6b ansible_connection=ssh ansible_host=ip-172-1-7-124.eu-west-3.compute.internal
+
+[local]
+localhost  ansible_connection=local
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
