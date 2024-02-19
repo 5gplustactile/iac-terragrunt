@@ -57,6 +57,7 @@ inputs = {
     owner = "alvaroandres.anayaamariles@telefonica.com"
     environment = "edge and region"
     project = "tactile5g"
+    "kubernetes.io/cluster/cluster-mgmt" = "shared"
   }
 
 }
