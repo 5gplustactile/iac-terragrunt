@@ -7,4 +7,4 @@ spec:
  replicas: 3
  template:
    spec:
-    repository: andresanaya21/tactile5g-local-auto-ztp
+    repository: andresanaya21/5gplustactile/auto-ztp

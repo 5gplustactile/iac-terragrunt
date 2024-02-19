@@ -1,25 +1,25 @@
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
- name: tactile5g-local-central-dc
+ name: 5gplustactile/central-dc
  namespace: actions-runner-system
 spec:
  replicas: 3
  template:
    spec:
-     repository: andresanaya21/tactile5g-local-central-dc
+     repository: andresanaya21/5gplustactile/central-dc
 
 ---
 
 apiVersion: actions.summerwind.dev/v1alpha1
 kind: RunnerDeployment
 metadata:
- name: tactile5g-local-central-dc-ext-node
+ name: 5gplustactile/central-dc-ext-node
  namespace: actions-runner-system
 spec:
  replicas: 3
  template:
    spec:
-     repository: andresanaya21/tactile5g-local-central-dc
+     repository: andresanaya21/5gplustactile/central-dc
      nodeSelector:
       node: external-node
