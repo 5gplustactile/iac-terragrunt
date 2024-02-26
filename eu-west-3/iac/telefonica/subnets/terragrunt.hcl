@@ -35,11 +35,12 @@ inputs = {
   }
 
   tags = {
-    name = "example-in-edge"
+    Name = "example-in-edge"
     owner = "alvaroandres.anayaamariles@telefonica.com"
     project = "tactile5g"
     environment = "edge/outpost"
     description = "subnets (private, public and outpost) to digital twins"
-    "kubernetes.io/cluster/telefonica-edge-example-in-edge" = "shared"
+    "kubernetes.io/cluster/edge-clusters-example-in-edge" = "shared"
+    "kubernetes.io/role/internal-elb" = 1
   }
 }
