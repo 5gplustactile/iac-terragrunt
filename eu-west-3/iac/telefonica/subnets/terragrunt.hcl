@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:andresanaya21/5gplustactile/auto-ztp.git//tf-modules/subnets?ref=main"
+  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/subnets?ref=main"
 }
 
 include {
@@ -20,20 +20,26 @@ inputs = {
   }
 
   subnet_outpost = {
-#    "example_in_edge" = {
-#      cidr_block_snet_op_region = "172.1.8.0/24"
-#    }
+    "example_in_edge" = {
+      cidr_block_snet_op_region = "172.1.8.0/24"
+    }
   }
 
   default_tags = {
     owner = "alvaroandres.anayaamariles@telefonica.com"
     project = "tactile5g"
+    environment = "edge/outpost"
     description = "subnets (private, public and outpost) to digital twins"   
+    "kubernetes.io/role/internal-elb" = 1
+    availability_zone = "region" 
   }
 
   tags = {
+    name = "example-in-edge"
     owner = "alvaroandres.anayaamariles@telefonica.com"
     project = "tactile5g"
+    environment = "edge/outpost"
     description = "subnets (private, public and outpost) to digital twins"
+    "kubernetes.io/cluster/telefonica-edge-example-in-edge" = "shared"
   }
 }

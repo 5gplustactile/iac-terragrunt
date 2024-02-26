@@ -7,7 +7,7 @@ spec:
  replicas: 3
  template:
    spec:
-     repository: andresanaya21/5gplustactile/central-dc
+     repository: 5gplustactile/central-dc
 
 ---
 
@@ -20,6 +20,6 @@ spec:
  replicas: 3
  template:
    spec:
-     repository: andresanaya21/5gplustactile/central-dc
+     repository: 5gplustactile/central-dc
      nodeSelector:
       node: external-node

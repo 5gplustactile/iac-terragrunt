@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:andresanaya21/5gplustactile/auto-ztp.git//tf-modules/vpc-peering?ref=main"
+  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/vpc-peering?ref=main"
 }
 
 include {
