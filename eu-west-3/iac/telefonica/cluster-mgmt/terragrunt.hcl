@@ -2,6 +2,12 @@ terraform {
   source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=main"
 }
 
+# dependency is executed before tf-rke2 module
+#dependency "vpc-peering" {
+#  config_path = "../vpc-peering"
+#  skip_outputs = true
+#}
+
 include {
   path = find_in_parent_folders()
 }
