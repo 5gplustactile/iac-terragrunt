@@ -22,12 +22,19 @@ inputs = {
     "example_in_edge" = {
       cidr_region = ["172.1.3.0/24","172.1.4.0/24","172.1.5.0/24"]
       az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
+    },
+    "example_in_edge_1" = {
+      cidr_region = ["172.1.6.0/24","172.1.7.0/24","172.1.9.0/24"]
+      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
     }
   }
 
   subnet_outpost = {
     "example_in_edge" = {
       cidr_block_snet_op_region = "172.1.8.0/24"
+    },
+    "example_in_edge_1" = {
+      cidr_block_snet_op_region = "172.1.10.0/24"
     }
   }
 
