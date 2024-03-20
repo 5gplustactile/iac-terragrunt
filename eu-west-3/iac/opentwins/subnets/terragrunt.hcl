@@ -26,7 +26,7 @@ inputs = {
   }
 
   subnet_outpost = {
-    "opentwins-edge" = {
+    "opentwins" = {
       cidr_block_snet_op_region = "172.1.16.0/24"
     }
   }
