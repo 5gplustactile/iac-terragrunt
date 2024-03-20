@@ -32,7 +32,7 @@ inputs = {
   }
 
   default_tags = {
-    owner = "Sergio Infante"
+    owner = "sergioip@uma.es"
     project = "tactile5g"
     environment = "edge"
     description = "subnets (private, public and outpost) to digital twins"   
@@ -42,7 +42,7 @@ inputs = {
 
   tags = {
     Name = "opentwins"
-    owner = "Sergio Infante"
+    owner = "sergioip@uma.es"
     project = "tactile5g"
     environment = "edge"
     description = "subnets (private, public and outpost) to digital twins"
