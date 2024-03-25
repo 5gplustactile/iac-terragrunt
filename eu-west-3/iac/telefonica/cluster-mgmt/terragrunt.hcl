@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=main"
+  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=cluster_mgmt"
 }
 
 # dependency is executed before tf-rke2 module
