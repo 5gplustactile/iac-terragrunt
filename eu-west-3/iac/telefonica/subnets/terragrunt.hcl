@@ -30,9 +30,9 @@ inputs = {
   }
 
   subnet_outpost = {
-#    "example-in-edge" = {
-#      cidr_block_snet_op_region = "172.1.8.0/24"
-#    }
+    "telefonica" = {
+      cidr_block_snet_op_region = "172.1.8.0/24"
+    }
   }
 
   default_tags = {
@@ -45,12 +45,12 @@ inputs = {
   }
 
   tags = {
-    Name = "example-region"
+    Name = "telefonica"
     owner = "alvaroandres.anayaamariles@telefonica.com"
     project = "tactile5g"
     environment = "region"
     description = "subnets (private, public and outpost) to digital twins"
-    "kubernetes.io/cluster/region-clusters-example-region" = "shared"
+    "kubernetes.io/cluster/edge-clusters-telefonica" = "shared"
     "kubernetes.io/role/internal-elb" = 1
   }
 }
