@@ -19,10 +19,10 @@ inputs = {
   route_table_id = "rtb-00bee61da9983cd54"
 
   subnet_region = {
-#    "telefonica" = {
-#      cidr_region = ["172.1.3.0/24","172.1.4.0/24","172.1.5.0/24"]
-#      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
-#    },
+    "tef-cluster" = {
+      cidr_region = ["172.1.3.0/24","172.1.4.0/24","172.1.5.0/24"]
+      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
+    },
 #    "example-region-0" = {
 #      cidr_region = ["172.1.10.0/24","172.1.11.0/24","172.1.12.0/24"]
 #      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
@@ -30,9 +30,9 @@ inputs = {
   }
 
   subnet_outpost = {
-#    "telefonica" = {
-#      cidr_block_snet_op_region = "172.1.8.0/24"
-#    }
+    "tef-cluster" = {
+      cidr_block_snet_op_region = "172.1.8.0/24"
+    }
   }
 
   default_tags = {
