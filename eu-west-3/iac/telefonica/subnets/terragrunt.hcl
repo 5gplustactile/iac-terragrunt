@@ -19,7 +19,7 @@ inputs = {
   route_table_id = "rtb-00bee61da9983cd54"
 
   subnet_region = {
-    "tef-cluster" = {
+    "telefonica" = {
       cidr_region = ["172.1.3.0/24","172.1.4.0/24","172.1.5.0/24"]
       az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
     },
@@ -30,7 +30,7 @@ inputs = {
   }
 
   subnet_outpost = {
-    "tef-cluster" = {
+    "telefonica" = {
       cidr_block_snet_op_region = "172.1.8.0/24"
     }
   }
