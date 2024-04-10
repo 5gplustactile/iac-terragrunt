@@ -30,10 +30,10 @@ inputs = {
   }
 
   subnet_outpost = {
-#    "tef-cluster" = {
-#      cidr_block_snet_op_region = "172.1.8.0/24"
-#    }
-#  }
+    "tef-cluster" = {
+      cidr_block_snet_op_region = "172.1.8.0/24"
+    }
+  }
 
   default_tags = {
     owner = "alvaroandres.anayaamariles@telefonica.com"
