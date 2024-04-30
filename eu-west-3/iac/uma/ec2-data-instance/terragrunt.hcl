@@ -17,7 +17,7 @@ inputs = {
     project = "tactile5g"
   }
   key_name = "uma-data-escalability"
-  monitoring = true
+  monitoring = false
   instance_type_region = "t3.medium"
   vpc_id = "vpc-057b30edf831b5d57"
   nat_gw_id = "nat-0e1f68e7357b07e72"
