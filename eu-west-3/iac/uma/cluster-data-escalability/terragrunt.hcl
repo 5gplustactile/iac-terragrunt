@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=main"
+  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=no_monitoring"
 }
 
 # dependency is executed before tf-rke2 module
@@ -21,7 +21,7 @@ inputs = {
   name_bastion_host = "uma-bastion-data-escalability"
   enable_bastion_host = true
   name_lb = "nlb-uma-data"
-  monitoring = true
+  monitoring = false
   cidr_block_vpc_digital_twins = ""
   ami = "ami-05b5a865c3579bbc4"
   email_list = ["alvaroandres.anayaamariles@telefonica.com"]
