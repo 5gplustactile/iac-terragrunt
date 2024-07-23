@@ -10,8 +10,8 @@ inputs = {
   name_digital_twins = "telefonica"
   vpc_id_dt = "vpc-08291124993d8220b"
   instances = {
-#    "i-07f0c5e732c9ada12" = "172.1.7.0/24"
-#    "i-0e1db09258aa0850f" = "172.1.6.0/24"
+    "i-0f3b28109d7ecf424" = "172.1.26.0/24"
+    "i-01ffd9a98db1e4956" = "172.1.27.0/24"
 
   }
 
