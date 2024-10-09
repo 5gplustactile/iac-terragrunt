@@ -27,7 +27,7 @@ inputs = {
 
   subnet_outpost = {
     "demo" = {
-      cidr_block_snet_op_region = "172.1.16.0/24"
+      cidr_block_snet_op_region = "172.1.19.0/24"
     }
   }
 
