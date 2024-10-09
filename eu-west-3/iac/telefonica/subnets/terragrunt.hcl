@@ -27,6 +27,10 @@ inputs = {
       cidr_region = ["172.1.20.0/24","172.1.21.0/24","172.1.22.0/24"]
       az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
     }
+    "demo" = {
+      cidr_region = ["172.1.23.0/24","172.1.24.0/24","172.1.25.0/24"]
+      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
+    }
 #    "example-region-0" = {
 #      cidr_region = ["172.1.10.0/24","172.1.11.0/24","172.1.12.0/24"]
 #      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
