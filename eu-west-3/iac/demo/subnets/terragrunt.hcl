@@ -19,16 +19,16 @@ inputs = {
   route_table_id = "rtb-00bee61da9983cd54"
 
   subnet_region = {
-    "demo" = {
-      cidr_region = ["172.1.23.0/24","172.1.24.0/24","172.1.25.0/24"]
-      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
-    }
+#    "demo" = {
+#      cidr_region = ["172.1.23.0/24","172.1.24.0/24","172.1.25.0/24"]
+#      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
+#    }
   }
 
   subnet_outpost = {
-    "demo" = {
-      cidr_block_snet_op_region = "172.1.19.0/24"
-    }
+#    "demo" = {
+#      cidr_block_snet_op_region = "172.1.19.0/24"
+#    }
   }
 
   default_tags = {
