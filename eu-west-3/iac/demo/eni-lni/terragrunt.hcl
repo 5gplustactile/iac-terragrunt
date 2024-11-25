@@ -7,8 +7,8 @@ include {
 }
 
 inputs = {
-#  name_digital_twins = "demo"
-#  vpc_id_dt = "vpc-08291124993d8220b"
+  name_digital_twins = "demo"
+  vpc_id_dt = "vpc-08291124993d8220b"
 #  instances = {
 #    "i-0d1575fdc485e40ce" = "172.1.29.0/24"
 #    "i-086ad7c1f65363a6d" = "172.1.30.0/24"
