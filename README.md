@@ -32,3 +32,6 @@ Sigue estos pasos para trabajar con los archivos de configuración:
    $ terragrunt apply
    ```
 
+## Licencia
+
+Este projecto es licenciado bajo [Apache](LICENSE)
