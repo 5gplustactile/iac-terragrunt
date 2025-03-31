@@ -1,0 +1,10 @@
+- name: update and resrtart s3 metrics cloudwatch
+  hosts: all
+  become: yes
+  gather_facts: no
+  tasks:
+  
+    - name: update s3 file
+      ansible.builtin.shell: |
+        sudo aws s3 cp s3://mgmt-config-files/amazon-cloudwatch-agent.json /opt/aws/amazon-cloudwatch-agent/amazon-cloudwatch-agent.json
+        sudo amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/amazon-cloudwatch-agent.json

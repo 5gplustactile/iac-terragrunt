@@ -1,0 +1,26 @@
+[masters]
+cluster-researcher-master-0 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/labuser/researcher-aws.pem ansible_host=ip-172-2-1-49.eu-west-3.compute.internal
+#master-1 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/labuser/tactile5g.pem ansible_host=ip-172-0-4-136.eu-west-3.compute.internal
+#master-2 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/labuser/tactile5g.pem ansible_host=ip-172-0-0-184.eu-west-3.compute.internal
+
+
+[workers:children]
+region
+edge
+external-nodes
+
+[region]
+cluster-researcher-worker-2 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/researcher/researcher-aws.pem ansible_host=ip-192-168-1-170.eu-west-3.compute.internal
+#worker-2 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/labuser/tactile5g.pem ansible_host=ip-172-0-4-133.eu-west-3.compute.internal
+
+[edge]
+cluster-researcher-worker-0 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/researcher/researcher-aws.pem ansible_host=ip-172-2-4-237.eu-west-3.compute.internal
+#worker-1 ansible_connection=ssh ansible_user=ubuntu ansible_ssh_private_key_file=/home/labuser/tactile5g.pem ansible_host=ip-172-0-4-24.eu-west-3.compute.internal
+
+[external-nodes]
+
+[local]
+localhost  ansible_connection=local
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
