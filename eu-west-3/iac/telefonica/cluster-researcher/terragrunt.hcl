@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=wvl-zone-tf-rke2"
+  source = "git@github.com:5gplustactile/auto-ztp.git//tf-modules/tf-rke2?ref=wvl-zone-tf-rke2-researcher"
 }
 
 # dependency is executed before tf-rke2 module
@@ -16,13 +16,13 @@ inputs = {
   vpc_cidr = "172.2.0.0/16"
   vpc_private_subnets = ["172.2.1.0/24", "172.2.2.0/24","172.2.3.0/24"]
   vpc_public_subnets = ["172.2.48.0/24", "172.2.49.0/24","172.2.50.0/24"]
-  vpc_cidr_wvl = "192.168.1.0/24"
-  private_subnets_wvl = ["192.168.1.128/28", "192.168.1.144/28"]
-  public_subnets_wvl = ["192.168.1.0/28", "192.168.1.16/28"]
+  vpc_cidr_wvl = "192.168.0.0/16"
+  private_subnets_wvl = ["192.168.1.0/24", "192.168.2.0/24", "192.168.3.0/24"]
+  public_subnets_wvl = ["192.168.48.0/24", "192.168.49.0/24", "192.168.50.0/24"]
   vpc_name = "cluster-multi-zone"
   cidr_block_snet_op_region = "172.2.4.0/24"
   cidr_block_snet_op_local = "172.2.5.0/24"
-  cidr_block_snet_wvl = "192.168.1.160/28"
+  cidr_block_snet_wvl = "192.168.4.0/24"
   key_name = "researcher-aws"
   name_bastion_host = "bastion-researcher"
   enable_bastion_host = true
