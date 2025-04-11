@@ -23,10 +23,10 @@ inputs = {
       cidr_region = ["172.1.3.0/24","172.1.4.0/24","172.1.5.0/24"]
       az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
     },
-    "core5g" = {
-      cidr_region = ["172.1.20.0/24","172.1.21.0/24","172.1.22.0/24"]
-      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
-    }
+#    "core5g" = {
+#      cidr_region = ["172.1.20.0/24","172.1.21.0/24","172.1.22.0/24"]
+#      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
+#    }
 #    "example-region-0" = {
 #      cidr_region = ["172.1.10.0/24","172.1.11.0/24","172.1.12.0/24"]
 #      az = ["eu-west-3a","eu-west-3b","eu-west-3c"]
